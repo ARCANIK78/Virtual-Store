@@ -1,0 +1,599 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Distribuye los elsementos a los extremos */
+    align-items: center;
+}
+
+/* Título de la página en la barra de navegación */
+.navbar-title h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Links de la barra de navegación */
+.navbar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Espacio entre los enlaces */
+}
+
+.navbar-links li {
+    margin: 0;
+}
+
+.navbar-links a {
+    color: white;
+    font-size: 18px;
+}
+
+/* Nombre de usuario en la esquina de la barra de navegación */
+.navbar-username {
+    font-size: 16px;
+    color: blue; /* Cambia el color que desees */
+    margin-left: auto;
+    padding-left: 20px;
+}
+
+
+/* Contenido */
+.content {
+    padding: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #bbb;
+}
+
+
+/* Catálogo */
+.catalogo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.aside-categorias {
+    width: 25%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-productos {
+    width: 70%;
+}
+
+.search-form {
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-container input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex-grow: 1; /* Para que el input ocupe el espacio disponible */
+}
+
+.search-container button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+.productos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.producto {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.producto:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.producto h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 16px;
+}
+
+.producto a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.producto a:hover {
+    text-decoration: underline;
+}
+
+/* Tamaño fijo para las imágenes de productos */
+.producto-imagen {
+    width: 240px;  /* Ancho fijo */
+    height: 200px; /* Alto fijo */
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+    border-radius: 8px;
+}
+
+/* Estilo del contenedor de login ----------------------- */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px 25px;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.login-container h1 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Formulario de login */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Estilo del botón de login */
+.btn-login {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-login:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Registro de formulario */
+/* Contenedor principal para el formulario de registro -------------------------*/
+.register-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 25px;
+    background-color: #f9f9f9; /* Fondo suave */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    transition: transform 0.2s;
+}
+
+.register-container:hover {
+    transform: scale(1.02);
+}
+
+/* Estructura de formulario */
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grupos de campos */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* Campos de entrada de texto */
+.form-group input {
+    padding: 12px;
+    font-size: 0.95em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Botón de envío */
+.btn-submit {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Mensaje de alerta */
+.alert {
+    background-color: #dff0d8;
+    border: 1px solid #d0e9c6;
+    color: #3c763d;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Contenedor de Producto detalles ----------*/
+.producto-detalle-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del producto */
+.producto-info h1 {
+    color: #343a40;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Información del precio y categoría */
+.producto-precio, .producto-categoria {
+    font-weight: bold;
+    color: #495057;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+/* Descripción del producto */
+.producto-info p {
+    font-size: 1em;
+    color: #6c757d;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Calificación del producto */
+.producto-calificacion h2 {
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: #343a40;
+}
+
+/* Estilos para las estrellas de calificación */
+.estrellas-calificacion input[type="radio"] {
+    display: none;
+}
+
+.estrellas-calificacion label {
+    font-size: 2em;
+    color: #ddd;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.estrellas-calificacion label:hover,
+.estrellas-calificacion label:hover ~ label,
+.estrellas-calificacion input[type="radio"]:checked ~ label {
+    color: #ffc107;
+}
+
+/* Estilo para el mensaje de éxito */
+.alert {
+    padding: 15px;
+    background-color: #28a745; /* Verde */
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.alert p {
+    margin: 0;
+}
+
+/* Estilo de los botones */
+.boton-volver, .boton-calificar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+.boton-volver:hover, .boton-calificar:hover {
+    background: #0056b3;
+}
+
+/* Estilo de las estrellas (cambio a RTL) */
+.clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+/* Espaciado del formulario */
+form {
+    margin-top: 30px;
+}
+
+/* Tamaño de los botones */
+form button {
+    padding: 10px 25px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+/* Botón de Comprar Producto */
+.boton-comprar {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s;
+}
+
+.boton-comprar:hover {
+    background-color: #218838;
+}
+
+/* Estilo para el botón de comprar */
+.boton-comprar {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s;
+}
+
+.boton-comprar:hover {
+    background-color: #218838;
+}
+
+/* Estilo del Modal */
+.modal {
+    display: none; /* Ocultamos el modal por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    padding-top: 60px;
+    text-align: center;
+}
+
+.modal-contenido {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
+}
+
+.modal-contenido h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.modal input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.botones-modal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancelar, .comprar {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancelar {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.cancelar:hover {
+    background-color: #c82333;
+}
+
+.comprar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.comprar:hover {
+    background-color: #218838;
+}
+form {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Clasificación de estrellas, con dirección derecha a izquierda */
+.clasificacion {
+    direction: rtl; /* Las estrellas empiezan de derecha a izquierda */
+    unicode-bidi: bidi-override;
+}
+
+/* Ocultar los botones de radio */
+input[type="radio"] {
+    display: none;
+}
+
+/* Estilo general de las estrellas sin seleccionar */
+.clasificacion label {
+    font-size: 2em;
+    color: grey; /* Color gris por defecto */
+    cursor: pointer;
+}
+
+/* Cambia el color a naranja al pasar el mouse por encima de una estrella */
+.clasificacion label:hover,
+.clasificacion label:hover ~ label {
+    color: orange;
+}
+
+/* Cambia el color a naranja para las estrellas seleccionadas */
+input[type="radio"]:checked ~ label {
+    color: orange;
+}
+
+/* Estilo del botón de calificar */
+.boton-calificar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Efecto hover para el botón */
+.boton-calificar:hover {
+    background: #0056b3;
+}

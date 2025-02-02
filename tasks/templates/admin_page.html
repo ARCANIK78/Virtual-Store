@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Página de Administración</h1>
+    <p>Bienvenido al panel de administración. Aquí puedes gestionar los productos, categorías y usuarios.</p>
+
+    <div class="admin-links">
+        <h3>Acciones Administrativas:</h3>
+        <ul>
+            <li><a href="{% url 'agregar_producto' %}">Agregar Producto</a></li>
+            <li><a href="{% url 'catalogo' %}">Ver Catálogo de Productos</a></li>
+        </ul>
+    </div>
+
+    <p>Realiza las acciones necesarias para administrar el sistema.</p>
+{% endblock %}
