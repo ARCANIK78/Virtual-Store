@@ -1,0 +1,2 @@
+# Virtual-Store
+django + postgres
